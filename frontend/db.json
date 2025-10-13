@@ -1,0 +1,251 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "JohnDoe1182736@gmail.com",
+      "role": "Store keeper"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "JaneSmith99918@gmail.com",
+      "role": "store manager"
+    }
+  ],
+  "storage": {
+    "products": [
+      {
+        "id": 1,
+        "name": "cooker 20X20",
+        "description": "Small cooker for home use 20X20 cm size with 2 years warranty and free service",
+        "price": 29.99,
+        "stock": 100
+      },
+      {
+        "id": 2,
+        "name": "cooker 30X30",
+        "description": "Medium cooker for home use 30X30 cm size with 2 years warranty and free service",
+        "price": 49.99,
+        "stock": 50
+      },
+      {
+        "id": 3,
+        "name": "cooker 40X40",
+        "description": "Large cooker for home use 40X40 cm size with 2 years warranty and free service",
+        "price": 69.99,
+        "stock": 25
+      },
+      {
+        "id": 4,
+        "name": "Egnater ",
+        "description": "Egnater for cooker with refillable gas tank and safety valve",
+        "price": 9.99,
+        "stock": 10
+      },
+      {
+        "id": 5,
+        "name": "flexible gas hose",
+        "description": " Flexible gas hose for connecting cooker to gas source with 1 meter length and stainless steel material",
+        "price": 0.99,
+        "stock": 115
+      },
+      {
+        "id": 6,
+        "name": "Gas regulator",
+        "description": "Gas regulator for controlling gas flow from gas source to cooker with pressure gauge and safety valve",
+        "price": 4.99,
+        "stock": 30
+      },
+      {
+        "id": 7,
+        "name": "Gas leak detector",
+        "description": "Gas leak detector for detecting gas leaks in kitchen or other areas with audible alarm and LED indicator",
+        "price": 19.99,
+        "stock": 20
+      }
+    ],
+    "cylinders": [
+      {
+        "id": 1,
+        "type": "3kg",
+        "capacity": "3 kg",
+        "price": 10.99,
+        "stock": 30,
+        "empty": 30
+      },
+      {
+        "id": 2,
+        "type": "6kg",
+        "capacity": "6 kg",
+        "price": 29.99,
+        "stock": 80,
+        "empty": 80
+      },
+      {
+        "id": 3,
+        "type": "Large",
+        "capacity": "13 kg",
+        "price": 49.99,
+        "stock": 250,
+        "empty": 250
+      },
+      {
+        "id": 4,
+        "type": "Extra Large",
+        "capacity": "25 kg",
+        "price": 89.99,
+        "stock": 60,
+        "empty": 60
+      },
+      {
+        "id": 5,
+        "type": "Industrial",
+        "capacity": "50 kg",
+        "price": 199.99,
+        "stock": 28,
+        "empty": 28
+      },
+      {
+        "id": 6,
+        "type": "Commercial",
+        "capacity": "100 kg",
+        "price": 349.99,
+        "stock": 2,
+        "empty": 2
+      }
+    ]
+  },
+  "Forms": {
+    "productionForms": [
+      {
+        "id": 1,
+        "type": "production",
+        "date": "2023-10-01",
+        "createdBy": "John Doe",
+        "status": "completed",
+        "supperviser": "Jane Smith",
+        "site": "FGX site",
+        "tankerNo": "T2",
+        "objects": [
+          {
+            "13kg": 13,
+            "quantity": 10
+          },
+          {
+            "13kg plastic": 13,
+            "quantity": 5
+          },
+          {
+            "25kg": 25,
+            "quantity": 2
+          },
+          {
+            "50kg": 50,
+            "quantity": 1
+          },
+          {
+            "20kg plastic": 20,
+            "quantity": 3
+          },
+          {
+            "17kg plastic": 17,
+            "quantity": 4
+          },
+          {
+            "17kg": 17,
+            "quantity": 6
+          }
+        ],
+        "totalGas": "525kg",
+        "totalCylinders": 31
+      },
+      {
+        "id": 2,
+        "type": "production",
+        "date": "2023-10-05",
+        "createdBy": "Jane Smith",
+        "status": "pending",
+        "supperviser": "John Doe",
+        "site": "Main site",
+        "objects": [
+          {
+            "6kg": 6,
+            "quantity": 15
+          },
+          {
+            "3kg": 3,
+            "quantity": 20
+          }
+        ],
+        "totalGas": "135kg",
+        "totalCylinders": 35
+      }
+    ],
+    "SalsForms": [
+      {
+        "id": 1,
+        "type": "sales",
+        "date": "2023-10-10",
+        "createdBy": "John Doe",
+        "driverName": "Mike Johnson",
+        "driverId": "D123456",
+        "objects": [
+          {
+            "13kg": 13,
+            "quantity": 5
+          },
+          {
+            "25kg": 25,
+            "quantity": 2
+          }
+        ],
+        "totalGas": 104,
+        "totalCylinders": 7,
+        "status": "pending"
+      },
+      {
+        "id": 2,
+        "type": "sales",
+        "date": "2023-10-12",
+        "createdBy": "Jane Smith",
+        "driverName": "Sarah Lee",
+        "driverId": "D654321",
+        "objects": [
+          {
+            "6kg": 6,
+            "quantity": 10
+          },
+          {
+            "3kg": 3,
+            "quantity": 15
+          }
+        ],
+        "totalGas": 105,
+        "totalCylinders": 25,
+        "status": "completed"
+      },
+      {
+        "id": 3,
+        "type": "sales",
+        "date": "2023-10-15",
+        "createdBy": "John Doe",
+        "driverName": "Tom Brown",
+        "driverId": "D789012",
+        "objects": [
+          {
+            "50kg": 50,
+            "quantity": 1
+          },
+          {
+            "13kg": 13,
+            "quantity": 80
+          }
+        ],
+        "totalGas": 1060,
+        "totalCylinders": 81,
+        "status": "pending"
+      }
+    ]
+  }
+}
