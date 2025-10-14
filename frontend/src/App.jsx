@@ -23,18 +23,18 @@ function App() {
   return (
     <>
       <div className="container block m-auto  h-screen ">
-        <UpperBar />
-        <div className="pt-15 pb-10">
-          <Routes>
+        <Routes>
+          <UpperBar />
+          <div className="pt-15 pb-10">
             <Route path="/" element={<HomePage />} />
             <Route path="/incomplete" element={<IncomplatePage />} />
-            <Route path="/add" element={<FormPage />} />
+            <Route path="/forms" element={<FormPage />} />
             <Route path="/Storage" element={<StoragePage />} />
             <Route path="/profile" element={<ProfilePage />} />
-          </Routes>
-        </div>
+          </div>
 
-        <Navigation />
+          <Navigation />
+        </Routes>
       </div>
     </>
   );
