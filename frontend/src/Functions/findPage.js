@@ -1,20 +1,25 @@
-export const findWhichPage = ()=>{
-    const url = window.location.pathname
-    console.log(url)
+export const findWhichPage = () => {
+  const url = window.location.pathname;
+  console.log(url);
 
-    switch (url){
-        case '/':
-            return 'home'
-        case '/incomplete':
-            return 'incomplete'
-        case '/add':
-            return 'add'
-        case '/storage':
-            return 'storage'
-        case '/profile':
-            return 'profile';
-        default:
-            return ''
+  switch (url) {
+    case "/":
+      return "home";
+    case "/incomplete":
+      return "incomplete";
+    case "/add":
+      return "add";
+    case "/storage":
+      return "storage";
+    case "/profile":
+      return "profile";
+    default:
+      return "";
+  }
+};
 
-    }
-}
+export const currentDate = () => {
+  const date = new Date();
+  const ctDate = date.toLocaleDateString("en-CA"); // Format: YYYY-MM-DD
+  return ctDate;
+};

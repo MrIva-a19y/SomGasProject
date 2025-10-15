@@ -9,6 +9,7 @@ import IncomplatePage from "./Pages/IncomplatePage";
 import FormPage from "./Pages/FormPage";
 import StoragePage from "./Pages/StoragePage";
 import ProfilePage from "./Pages/ProfilePage";
+import ProductionForm from "./Componanets/ProductionForm";
 
 function App() {
   const [data, setData] = useState([]);
@@ -23,18 +24,18 @@ function App() {
   return (
     <>
       <div className="container block m-auto  h-screen ">
-        <Routes>
-          <UpperBar />
-          <div className="pt-15 pb-10">
+        <UpperBar />
+        <div className="pt-15 pb-10">
+          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/incomplete" element={<IncomplatePage />} />
             <Route path="/forms" element={<FormPage />} />
             <Route path="/Storage" element={<StoragePage />} />
             <Route path="/profile" element={<ProfilePage />} />
-          </div>
-
+            <Route path="/forms/production" element={<ProductionForm />} />
+          </Routes>
           <Navigation />
-        </Routes>
+        </div>
       </div>
     </>
   );

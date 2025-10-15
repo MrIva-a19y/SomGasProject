@@ -49,7 +49,7 @@ function Navigation() {
         <div className="p-3 bg-green-400 rounded-full mt-1">
           <Link
             to="/forms"
-            className="flex justify-around items-center w-[-webkit-fill-available] h-[-webkit-fill-available] "
+            className="flex justify-around items-center w-[-webkit-fill-available] h-[-webkit-fill-available]"
           >
             <img
               src={currentPage() === "/forms" ? add : output}
