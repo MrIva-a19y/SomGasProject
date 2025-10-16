@@ -16,11 +16,11 @@ function Navigation() {
     return url.pathname;
   };
   return (
-    <div className="container flex flex-row items-center  fixed bottom-0 left-0 [&>div]:cursor-pointer [&>div]:flex-1  top-auto  min-w-screen bg-white [&>div]:h-[-webkit-fill-available] [&>div]:flex  [&>div]:justify-center [&>div]:items-center   [&>div]:hover:bg-green-200 ">
+    <div className="container flex flex-row   fixed bottom-0 left-0 [&>div]:cursor-pointer [&>div]:flex-1  top-auto  min-w-screen bg-white [&>div]:h-[-webkit-fill-available] [&>div]:flex z-50 [&>div]:justify-center    [&>div]:hover:bg-green-200 ">
       <div>
         <Link
           to="/"
-          className={`w-[-webkit-fill-available] h-[-webkit-fill-available] flex justify-around items-center home ${
+          className={`w-[-webkit-fill-available] min-w-full min-h-full h-[-webkit-fill-available] flex justify-around items-center home ${
             currentPage() === "/" ? "bg-green-400" : ""
           }`}
         >
@@ -36,7 +36,7 @@ function Navigation() {
       <div>
         <Link
           to="/incomplete"
-          className={`waiting w-[-webkit-fill-available] h-[-webkit-fill-available] flex justify-around items-center ${
+          className={`waiting w-[-webkit-fill-available] min-w-full min-h-full h-[-webkit-fill-available] flex justify-around items-center ${
             currentPage() === "/incomplete" ? "bg-green-400" : ""
           }`}
         >
@@ -49,7 +49,7 @@ function Navigation() {
         <div className="p-3 bg-green-400 rounded-full mt-1">
           <Link
             to="/forms"
-            className="flex justify-around items-center w-[-webkit-fill-available] h-[-webkit-fill-available]"
+            className="flex justify-around items-center min-w-full min-h-full w-[-webkit-fill-available] h-[-webkit-fill-available]"
           >
             <img
               src={currentPage() === "/forms" ? add : output}
@@ -62,7 +62,7 @@ function Navigation() {
       <div>
         <Link
           to="/storage"
-          className={`storage flex w-[-webkit-fill-available] h-[-webkit-fill-available] justify-around items-center ${
+          className={`storage flex w-[-webkit-fill-available] min-w-full min-h-full h-[-webkit-fill-available] justify-around items-center ${
             currentPage() === "/storage" ? "bg-green-400" : ""
           }`}
         >
@@ -72,7 +72,7 @@ function Navigation() {
       <div>
         <Link
           to="/profile"
-          className={`user flex w-[-webkit-fill-available] h-[-webkit-fill-available] justify-around items-center ${
+          className={`user flex w-[-webkit-fill-available] min-w-full min-h-full h-[-webkit-fill-available] justify-around items-center ${
             currentPage() === "/profile" ? "bg-green-400" : ""
           }`}
         >
