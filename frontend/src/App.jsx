@@ -4,7 +4,6 @@ import "./App.css";
 import Navigation from "./Componanets/Navigation";
 import UpperBar from "./Componanets/UpperBar";
 import HomePage from "./Pages/HomePage";
-import { findWhichPage } from "./Functions/findPage";
 import IncomplatePage from "./Pages/IncomplatePage";
 import FormPage from "./Pages/FormPage";
 import StoragePage from "./Pages/StoragePage";
@@ -14,12 +13,11 @@ import ProductionForm from "./Componanets/ProductionForm";
 function App() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/Forms")
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
-  console.log(data);
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/Forms")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data));
+  // }, []);
 
   return (
     <>

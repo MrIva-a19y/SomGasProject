@@ -7,7 +7,6 @@ import avatar from "../assets/user.png";
 import output from "../assets/output.png";
 import outputHome from "../assets/outputHome.png";
 import { Link, useLocation } from "react-router-dom";
-import { findWhichPage } from "../Functions/findPage";
 
 function Navigation() {
   const iconSize = "w-10";
