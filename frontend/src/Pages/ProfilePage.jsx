@@ -5,13 +5,15 @@ import headerBg from "../assets/profile-header-bg.png";
 function ProfilePage() {
   return (
     <div>
-      <div className="upper_page_profile">
+      <div className="upper_page_profile overflow-auto max-h-screen  dark:[&>*]:text-white">
         <div
-          className={`profile_header p-2 max-w-screen pt-5 pb-5 flex flex-col items-center justify-center`}
+          className={`profile_header p-2 max-w-screen md:pb-50 min-h-[100%] pt-5 pb-5 flex flex-col items-center justify-center`}
         >
           <img src={profileImg} className="rounded-full" alt="profile img" />
           <div className="description [&>*]:pb-2">
-            <h2 className="text-3xl font-bold text-black">John Doe</h2>
+            <h2 className="text-3xl font-bold dark:text-white text-black">
+              John Doe
+            </h2>
             <div className="title border-black mb-2 mt-2 m-auto border-1 rounded-lg p-1 w-fit">
               Title :<span> StoreKeeper</span>
             </div>
@@ -25,7 +27,7 @@ function ProfilePage() {
             </div>
           </div>
         </div>
-        <div className="profile-options max-w-screen mt-5 flex flex-col justify-center items-center ">
+        <div className="profile-options  max-h-[-webkit-fill-available]  dark:[&>*]:hover:text-black dark:[&>*]:hover:bg-gray-700 dark:[&>*]:hover:font-bold max-w-screen mt-5 flex flex-col justify-center items-center ">
           <div className="option border-1 border-black p-3 text-left rounded-2xl w-[80%] mb-3 hover:cursor-pointer hover:bg-green-200">
             History
           </div>

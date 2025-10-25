@@ -2,7 +2,7 @@ import React from "react";
 
 function IncomplatePage() {
   return (
-    <div className="min-h-dvh h-screen flex  items-center justify-center text-3xl ">
+    <div className="min-h-dvh h-screen flex md:max-h-[100%] md:min-h-0  items-center justify-center text-3xl ">
       <h1>incomplete page</h1>
     </div>
   );

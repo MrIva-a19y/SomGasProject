@@ -6,8 +6,8 @@ import cylinders from "../assets/cylinders.png";
 function StoragePage() {
   return (
     <div>
-      <div className="container max-w-screen flex p-2 flex-col items-center justify-center [&>div]:hover:cursor-pointer [&>div]:hover:scale-90  [&>div]:hover:shadow-lg  [&>div]:transition-all [&>div]:duration-300 [&>div]:ease-in-out">
-        <div className="option mb-4 container bg-amber-100 rounded-2xl flex items-center p-3 justify-items-center">
+      <div className="container max-w-screen min-w-0 flex p-2 flex-col items-center justify-center [&>div]:hover:cursor-pointer [&>div]:hover:scale-90  [&>div]:hover:shadow-lg  [&>div]:transition-all [&>div]:duration-300 [&>div]:ease-in-out">
+        <div className="option mb-4 container dark:bg-gray-700  bg-amber-100 rounded-2xl flex items-center p-3 justify-items-center">
           <img
             src={ProductsInStorages}
             alt="cooker"
@@ -22,7 +22,7 @@ function StoragePage() {
           </div>
         </div>
 
-        <div className="option container bg-amber-100 rounded-2xl flex items-center p-3 justify-items-center">
+        <div className="option container dark:bg-gray-700 bg-amber-100 rounded-2xl flex items-center p-3 justify-items-center">
           <img
             src={cylinders}
             alt="cooker"
